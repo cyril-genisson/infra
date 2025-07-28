@@ -9,7 +9,7 @@ jobs:
     steps:
       - name: Récupération du code
         uses: actions/checkout@v4
-      - names: Build:
+      - name: Build
         run: echo "🏗️  Phase de construction (build)..."
       - name: Test
         run: echo "🧪  Lancement des tests..."

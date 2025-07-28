@@ -17,7 +17,7 @@ check() {
     fi
 }
 
-
+echo "--------------------"
 echo "Start verifications:"
 echo "--------------------"
 echo ""
@@ -26,4 +26,5 @@ echo ""
 echo "-----------------"
 echo "End verifications"
 echo "-----------------"
-echo "Return: $CODE_OUTPUT"
+exit $CODE_OUTPUT
+
