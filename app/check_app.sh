@@ -9,7 +9,7 @@ CODE_OUTPUT=0
 
 check() {
     echo -n "index.html file exist: "
-    if [ -f "./index.html" ]; then
+    if [ -f "app/index.html" ]; then
         echo -e "${GREEN}PASS${NC}"
     else
         echo -e "${RED}FAULT${NC}"
