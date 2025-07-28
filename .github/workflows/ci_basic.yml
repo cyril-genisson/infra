@@ -1,0 +1,19 @@
+name: CI
+on:
+  push:
+    branches: [ "main" ]
+
+jobs:
+  build-and-test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Récupération du code
+        uses: actions/checkout@v4
+      - names: Build:
+        run: echo "🏗️  Phase de construction (build)..."
+      - name: Test
+        run: echo "🧪  Lancement des tests..."
+      - name: Make executable script
+        run: chmod +x app/check_app.sh
+      - name: Start tests
+        run: ./app/check_app.sh
