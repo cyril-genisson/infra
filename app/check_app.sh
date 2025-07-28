@@ -9,7 +9,7 @@ CODE_OUTPUT=0
 
 check() {
     echo -n "index.html file exist: "
-    if [ -f index.html ]; then
+    if [ -f "./index.html" ]; then
         echo -e "${GREEN}PASS${NC}"
     else
         echo -e "${RED}FAULT${NC}"
@@ -17,9 +17,9 @@ check() {
     fi
 }
 
-echo "--------------------"
-echo "Start verifications:"
-echo "--------------------"
+echo "-------------------"
+echo "Start verifications"
+echo "-------------------"
 echo ""
 check
 echo ""
